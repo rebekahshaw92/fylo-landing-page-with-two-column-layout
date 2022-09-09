@@ -1,0 +1,91 @@
+$veryDarkBlue: hsl(243, 87%, 12%);
+$brightBlue: hsl(224, 93%, 58%);
+$lightGrayishBlue: hsl(240, 75%, 98%);
+
+.attribution { 
+    font-size: 11px; 
+    padding: 40px;
+    text-align: center; 
+    color: $lightGrayishBlue;
+     a { 
+         color: hsl(228, 45%, 44%); 
+        }
+}
+
+footer {
+    background-color: $veryDarkBlue;
+}
+
+.footerLogo {
+    width: 70%;
+    padding: 10%;
+    margin-top: 10%;
+    padding-bottom: 0;
+    filter: brightness(0) invert(1);
+    @include media-breakpoint-up(lg){
+        width: 15%;
+        margin-top: 8%;
+        margin-left: 5%;
+        padding: 0;
+    }
+}
+
+
+.infoMain {
+    margin-left: 5%;
+    margin-top: 10%;
+    //  @include media-breakpoint-up(lg){
+    //   margin-top: 10%;
+    //  }
+}
+
+.info {    
+    margin-left: 5%;    
+}
+
+.infoPhone {
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+    }
+}
+
+.menu {
+    margin-top: 10%;
+}
+
+.footerMenu {
+      @include media-breakpoint-up(lg){
+         display: grid;
+         grid-template-columns: 4fr 3fr;
+         grid-template-rows: 1fr;
+     }
+}
+
+.footerMenu2 {
+    @include media-breakpoint-up(lg){
+        margin-top: 15% !important;
+    }
+}
+
+.social {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+ 
+.fa-brands {
+    color: $lightGrayishBlue;
+    border: 1px solid $lightGrayishBlue;
+    border-radius: 3rem;
+    padding: 20% 20% 20% 20%; 
+      &:hover {
+          color: $brightBlue;
+          border: 1px solid $brightBlue;
+      }
+
+}
+
+

@@ -1,0 +1,22 @@
+.logo {
+  margin: 5%;
+  width: 70%;
+  @include media-breakpoint-up(lg){
+    margin: 10%;
+    margin-left: 15%;
+  }
+}
+
+header {
+  padding-bottom: 150px;
+  background: url('../images/bg-curve-mobile.svg') no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  @include media-breakpoint-up(lg){
+    background: url('../images/bg-curve-desktop.svg') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 150px;
+  }
+}
+

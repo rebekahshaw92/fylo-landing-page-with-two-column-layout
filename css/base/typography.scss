@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$heading: 'Raleway', sans-serif;
+$body: 'Open Sans', sans-serif;
+$lightGray: hsl(0, 0%, 75%);
+$lightGrayishBlue: hsl(240, 75%, 98%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$veryDarkBlue: hsl(243, 87%, 12%);
+$moderateCyan: hsl(170, 45%, 43%);
+$brightBlue: hsl(224, 93%, 58%);
+$lightRed: hsl(0, 100%, 63%);
+
+
+.nav-link {
+    color: $desaturatedBlue;
+    font-family: $heading;
+}
+
+.title {
+    color: $veryDarkBlue;
+    font-family: $heading;
+    font-weight: 700; 
+    margin-top: 10%;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    @include media-breakpoint-up(lg){
+      //  margin: 1rem 0 2rem;
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 20%;
+
+    }
+}
+
+.subtitle {
+    color: $veryDarkBlue;
+    font-family: $heading;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
+    line-height: 1.7rem;
+    @include media-breakpoint-up(lg){
+        font-size: 1.1rem;
+        margin-top: 2%;
+        margin-bottom: 2.5rem;
+        margin-left: 10%;
+        line-height: 1.5rem;
+        margin-right: 5%;
+    }
+}
+
+.btnSubmit {
+    font-family: $heading;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.stayTitle {
+    color: $veryDarkBlue;
+    font-family: $body;
+    margin-top: 10%;
+   // margin-left: 10%;
+    margin-bottom: 7%;
+    font-weight: 700;
+    font-size: 1.3rem;
+    @include media-breakpoint-up(lg){
+        font-size: 1.6rem;
+        width: 70%;
+        margin-left: 10%;
+    }
+}
+
+.subtext {
+    color: $desaturatedBlue;
+    font-family: $body;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.08rem;
+    line-height: 1.8rem;
+    @include media-breakpoint-up(lg){
+        margin-left: 10%;
+        font-size: 1.1rem;
+    }
+}
+
+.linkStay {
+    color: $moderateCyan;
+    margin-top: 5%;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-bottom: 2%;
+    border-bottom: 1px solid $moderateCyan;
+    display: inline-block;
+    font-size: 1.05rem;
+    font-family: $body;
+    width: 40%;
+    &:hover {
+        opacity: 0.6;
+        color: $moderateCyan;
+     > svg > g > g > use { 
+         opacity: 0.6;
+       } 
+   }
+   @include media-breakpoint-up(lg){
+    width: 26%;
+    
+   }
+}
+
+.card-text {
+    font-family: $body;
+    color: $veryDarkBlue;
+    font-size: 0.9rem;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.name {
+    color: $veryDarkBlue;
+    font-family: $body;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.job {
+    color: $veryDarkBlue;
+    font-family: $body;
+    font-size: 0.6rem; 
+    margin-top: -5%;
+    opacity: 0.8;
+}
+
+.getTittle {
+    font-family: $heading;
+    font-weight: 700;
+    padding-top: 15%;
+    font-size: 1.5rem;
+    color: $lightGrayishBlue;
+    @include media-breakpoint-up(lg){
+        margin-left: 10%;
+        font-size: 1.8rem;
+    }
+}
+
+.getText {
+    font-family: $body;
+    color: $lightGrayishBlue;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.1rem;
+    @include media-breakpoint-up(lg){
+        font-size: 1.2rem;
+    }
+}
+
+.footerText {
+    color: $lightGrayishBlue;
+    font-size: 1.3rem;
+    font-family: $body;
+    @include media-breakpoint-up(lg){
+        font-size: 1rem;
+    }
+}
+
+.link {
+    list-style: none;
+    margin-top: 5%;
+    font-family: $body;
+    a {
+        text-decoration: none;
+        color: $lightGrayishBlue;
+        font-size: 1.3rem;
+        @include media-breakpoint-up(lg){
+            font-size: 1rem;
+        }
+        &:hover {
+           color: $brightBlue;
+        }
+    }
+}
+
+#emailError, #emailError2 {
+    color: $lightRed;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: $heading;
+    @include media-breakpoint-up(lg){
+        margin-left: 2%;
+    }
+}
+
+.form-control.error {
+    border: 1px solid $lightRed;
+  }
